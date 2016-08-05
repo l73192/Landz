@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_pic"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <ImageView
+            android:id="@+id/img_online_onepic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/defult_onepic"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/list_floating_boxes">
+            <TextView
+                android:id="@+id/tv_online_name"
+                style="@style/MyTextView"
+                android:textSize="@dimen/text_16"
+                android:padding="5dp"
+                android:text="昆泰嘉瑞中心"/>
+            <TextView
+                android:id="@+id/tv_online_type"
+                style="@style/MyTextView"
+                android:textSize="@dimen/text_12"
+                android:layout_toRightOf="@id/tv_online_name"
+                android:layout_alignBottom="@id/tv_online_name"
+                android:paddingBottom="7dp"
+                android:text="公寓"/>
+            <TextView
+                android:id="@+id/tv_online_xinxi"
+                style="@style/MyTextView"
+                android:textSize="@dimen/text_12"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="5dp"
+                android:paddingBottom="4dp"
+                android:text="公寓"/>
+
+            <TextView
+                android:id="@+id/tv_online_onemoney"
+                style="@style/MyTextView"
+                android:textSize="@dimen/text_16"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:paddingBottom="6dp"
+                android:textStyle="bold"
+                android:text="总价"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:src="@mipmap/newhouse_free"/>
+
+</RelativeLayout>

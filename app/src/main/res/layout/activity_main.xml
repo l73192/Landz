@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    tools:context=".landz.ui.MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@mipmap/main_top">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/main_page_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/index_arrow_down"
+                    android:padding="10dp"
+                    android:text="北京"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/et_main"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/shape"
+                    android:drawableLeft="@mipmap/first_search"
+                    android:focusable="false"
+                    android:hint="请输入楼盘名称或房源特征..."
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/tv_map"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="地图"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/black" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_online_house"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@mipmap/main_online_pic"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_online"
+                        style="@style/MyTextView"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/main_online_normal"
+                        android:text="在售豪宅"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_wait_rent_luxuryhouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@mipmap/main_daizu_pic"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_wait_rent"
+                        style="@style/MyTextView"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/main_wait_rent_normal"
+                        android:text="待租豪宅"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_house_appreciate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@mipmap/main_loupanjianshang_pic"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_seebuild"
+                        style="@style/MyTextView"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/main_seebuild_normal"
+                        android:text="楼盘鉴赏"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_new_luxuryhouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@mipmap/main_onehouse_pic"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_onehouse"
+                        style="@style/MyTextView"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@mipmap/main_onehouse_normal"
+                        android:text="待租豪宅"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_map_find_house"
+                android:background="@mipmap/main_map_pic"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_main_map"
+                    style="@style/MyTextView"
+                    android:text="地图找房"
+                    android:textSize="@dimen/text_14"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_map_normal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_luxuryhouse_research"
+                android:background="@mipmap/main_yanjiu_pic"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_main_study"
+                    style="@style/MyTextView"
+                    android:text="豪宅研究"
+                    android:textSize="@dimen/text_14"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_study_normal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_luxuryhouse_consultant"
+                android:background="@mipmap/main_guwen_pic"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_main_man"
+                    style="@style/MyTextView"
+                    android:text="地图找房"
+                    android:textSize="@dimen/text_14"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_man_normal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_my_luxuryhouse"
+                android:background="@mipmap/main_myhouse_pic"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_main_myhouse"
+                    style="@style/MyTextView"
+                    android:text="地图找房"
+                    android:textSize="@dimen/text_14"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@mipmap/main_myhouse_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
